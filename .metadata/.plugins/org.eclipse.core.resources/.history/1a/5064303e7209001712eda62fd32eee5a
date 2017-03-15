@@ -1,0 +1,24 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+class SchemaData:
+    _instances = None
+    def __new__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(SchemaData, cls).__new__(*args, **kwargs)
+        return cls._instances[cls]
+    
+    def __init__(self):
+        self.schemas = []
+    
+    def addSchema(self, name):
+        self.schemas.append(name)
+        
+    def changeSchemaName(self, name):
+        self.schemas.pop()
+        self.schemas.append(name)
+        
+        

@@ -1,0 +1,20 @@
+INSTUPNoSQL_Invetory.MetadataInventory
+/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/MetadataInventory.py
+INFOS:&&1|1|2|0&&3|3|2|1&&2|4|2|1&&2|5|2|1&&3|6|2|7&&2|8|2|1&&2|9|2|1&&1|10|2|0&&2|5|2|10&&3|11|2|12&&3|13|2|12&&3|14|2|12&&2|15|2|10&&2|16|2|10&&2|17|2|10
+getInventoryName=15
+MetadataInventory=1
+_instances=3
+nameInventory=13
+__new__=4
+describeInventory=14
+addInventory=8
+MetadataInventory.__init__=7
+getInventoryDescribe=16
+NoSQL_Invetory.MetadataInventory=2
+removeInventory=9
+inventories=6
+schemas=11
+__init__=5
+getSchemaData=17
+Inventory=10
+Inventory.__init__=12

@@ -1,0 +1,12 @@
+MODULES_MANAGER_V2
+Controller|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/Controller.py
+NoSQL.Import|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL/Import.py
+NoSQL.__init__|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL/__init__.py
+NoSQL_Invetory.MetadataInventory|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/MetadataInventory.py
+NoSQL_Invetory.SchemaData|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaData.py
+NoSQL_Invetory.SchemaDataColumnFamily|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataColumnFamily.py
+NoSQL_Invetory.SchemaDataDocument|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataDocument.py
+NoSQL_Invetory.SchemaDataGraph|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataGraph.py
+NoSQL_Invetory.SchemaDataKeyValue|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataKeyValue.py
+NoSQL_Invetory.SyntaxDML|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDML.py
+NoSQL_Invetory.__init__|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/__init__.py

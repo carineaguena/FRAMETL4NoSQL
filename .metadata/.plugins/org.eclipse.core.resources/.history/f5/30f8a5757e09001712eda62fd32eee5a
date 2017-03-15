@@ -1,0 +1,27 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+from NoSQL_Invetory.SchemaData import SchemaData
+
+class SchemaDataKeyValue(SchemaData):
+    
+    def __init__(self):
+        self.keys = []
+        self.values = []
+        self.schemas = []
+    
+    def addSchema(self, name):
+        SchemaData.addSchema(self, name)
+        
+    def addKey(self, key):
+        self.keys.append(key)
+        
+    def addValue(self, value):
+        self.values.append(value)
+        
+        
+
+        
+        

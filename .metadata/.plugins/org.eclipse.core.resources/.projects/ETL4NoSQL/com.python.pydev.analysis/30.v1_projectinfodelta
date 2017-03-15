@@ -1,0 +1,14 @@
+INSTUPNoSQL_Invetory.SchemaDataGraph
+/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataGraph.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&2|9|2|1&&2|10|2|1&&2|11|2|1
+SchemaDataGraph=1
+addVertices=11
+addEdges=10
+vertices=6
+NoSQL_Invetory.SchemaDataGraph=2
+edges=4
+name=7
+describe=8
+__init__=3
+SchemaDataGraph.__init__=5
+getSchema=9

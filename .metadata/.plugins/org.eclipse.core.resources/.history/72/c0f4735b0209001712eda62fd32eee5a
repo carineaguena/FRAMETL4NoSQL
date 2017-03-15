@@ -1,0 +1,8 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+class Metadata(self):
+    __init__(self):
+    

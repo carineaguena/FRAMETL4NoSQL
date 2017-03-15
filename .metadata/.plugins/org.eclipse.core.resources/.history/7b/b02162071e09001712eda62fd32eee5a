@@ -1,0 +1,22 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+from NoSQL_Invetory.SchemaData import SchemaData
+
+class SchemaDataGraph(SchemaData):
+    
+    def __init__(self):
+        self.edges = []
+        self.vertices = []
+    
+    def addSchema(self, name):
+        SchemaData.addSchema(self, name)
+        
+    def addEdges(self, edge):
+        self.edges.append(edge)
+        
+    def addVertices(self, vertice):
+        self.vertices.append(vertice)

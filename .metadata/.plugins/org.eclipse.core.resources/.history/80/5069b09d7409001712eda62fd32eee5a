@@ -1,0 +1,10 @@
+####
+ESQUEMA DE IMPLEMENTAÇÃO
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)
+    

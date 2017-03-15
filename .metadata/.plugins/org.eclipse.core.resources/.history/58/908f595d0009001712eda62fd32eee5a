@@ -1,0 +1,16 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+class DataRepository(object):
+    
+    def __init__(self, SGBD_source, SGBD_target, SGBD_APD):
+        self.SGBD_source = SGBD_source
+        self.SGBD_target = SGBD_target
+        self.SGBD_APD = SGBD_APD
+        
+    def setSchema(self):
+        
+        

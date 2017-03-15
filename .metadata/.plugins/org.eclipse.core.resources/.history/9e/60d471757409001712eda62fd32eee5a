@@ -1,0 +1,10 @@
+####
+ESQUEMA DE IMPLEMENTAÇÃO
+
+Passo 1:
+
+Instalar os Banco de dados a serem trabalhados
+- SGBDs utilizados para testes de funcionalidade do Framework
+    - Cassandra
+    - Redis
+    - 

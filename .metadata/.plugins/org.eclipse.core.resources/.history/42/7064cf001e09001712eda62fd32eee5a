@@ -1,0 +1,19 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+from NoSQL_Invetory.SchemaData import SchemaData
+
+class SchemaDataDocument(SchemaData):
+    
+    def __init__(self):
+        self.documents = []
+    
+    def addSchema(self, name):
+        SchemaData.addSchema(self, name)
+        
+    def addDocument(self, document):
+        self.documents.append(document)
+        

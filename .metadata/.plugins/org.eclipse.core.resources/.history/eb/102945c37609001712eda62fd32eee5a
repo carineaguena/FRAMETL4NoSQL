@@ -1,0 +1,30 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+Classe para criar inventários
+'''
+
+class MetadataInventory:
+    _instances = None
+    def __new__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(MetadataInventory, cls).__new__(*args, **kwargs)
+        return cls._instances[cls]
+    
+    def __init__(self):
+        self.name = []
+        self.describe = []
+        self.schema = []
+    
+    def addInventory(self, schemaData, nameInventory, describeInventory):
+        self.schema.append(schemaData)
+        self.name.append(nameInventory)
+        self.describe.append(describeInventory)
+        
+        
+    def changeInventory(self, name):
+        self._inventory.pop()
+        self._inventory.append(name)
+    
+    

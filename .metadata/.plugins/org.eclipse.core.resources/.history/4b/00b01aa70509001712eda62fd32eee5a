@@ -1,0 +1,14 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+class MetadataInventory(type):
+    def __call__(self, *args, **kwargs):
+        '''Aqui é possível adicionar o comportamento dessa classe 
+           
+         '''
+        return type.__call__(self, *args, **kwargs)
+    
+    

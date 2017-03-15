@@ -1,0 +1,13 @@
+####
+ESQUEMA DE IMPLEMENTAÇÃO
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)
+    

@@ -1,0 +1,14 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+from NoSQL_Invetory.SchemaData import SchemaData
+
+class SchemaDataKeyValue(SchemaData):
+    
+    def addColumn(self, desc):
+        
+
+        
+        

@@ -1,0 +1,11 @@
+'''
+Created on 2 de mar de 2017
+
+@author: carineaguena
+
+
+'''
+from Import import connectionSource
+
+conexao = connectionSource("localhost","root","12346","Cassandra")
+print(conexao.setDMLImportDB())

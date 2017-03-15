@@ -1,0 +1,59 @@
+'''
+Created on 1 de mar de 2017
+
+@author: carineaguena
+Componente responsavel pela importacao dos dados da base de origem
+Component responsible for import data from source
+
+'''
+
+class connectionSource(object):
+     
+    def __init__(self, host, user, password, dbType):
+        self.host=host
+        self.user=user
+        self.password=password
+        self.dbType=dbType
+        self.DMLImport = "No DML defined"  
+        self.queryImport = "No query defined"
+    
+    def setDMLImportDB(self):
+        if(self.dbType == 'Cassandra'):
+            column = raw_input("Digit Column value: ")
+            family = raw_input("Digit Family value: ")
+            self.DMLImport="cqlsh -e 'select " + column + " from " + family + "'" 
+        else:
+                self.DMLImport = "Database not found"   
+        return self.DMLImport
+    
+    def queryImportDB(self):
+        return self.queryImport
+        
+        
+    def getDMLImportDB(self):
+        
+            
+            
+
+
+
+'''import datetime
+import math 
+
+class humanos(object): 
+    def __init__(self,nome,dtnasc,peso,altura): 
+        self.nome=nome
+        self.dtnasc=dtnasc
+        self.peso=peso 
+        self.altura=altura
+    def getidade(self): 
+        calc= datetime.date.today()-self.dtnasc 
+        return int (calc.days/365.25) 
+    def getimc(self):
+        return self.peso/math.pow(self.altura/100., 2)
+     
+pessoa = humanos("Pessoa",datetime.date(1985,4,1), 98,178)
+print (pessoa.nome)
+print (pessoa.getidade(),"Anos de idade") '''
+
+
