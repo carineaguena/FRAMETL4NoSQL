@@ -4,6 +4,7 @@ Created on 14 de mar de 2017
 @author: carineaguena
 Classe para criar inventários
 '''
+from __main__ import port
 
 class MetadataInventory:
     _instances = None
@@ -21,20 +22,14 @@ class MetadataInventory:
     def removeInventory(self, inventory):
         self.inventories.remove(inventory.getInventoryName())
         
-
-#
-#Classe que mantem o inventario das bases de dados
-#Possui como atributos o esquema, o nome do inventario
-#A descricao do inventario, conexao
-# 
+        
         
 class Inventory:
     
-    def __init__(self, nameInventory, describeInventory, connection):
+    def __init__(self, nameInventory, describeInventory):
         self.schemas = []
         self.nameInventory = nameInventory
         self.describeInventory = describeInventory
-        self.connection = connection
         
     def getInventoryName(self):
         return self.nameInventory
@@ -47,10 +42,6 @@ class Inventory:
     
     def addSchema(self, schema):
         self.schemas.append(schema)
-    
-    #Metodo para conexao a base de dados
-    def connectDB(self):
-        pass
         
 class ConnectionDB:
     def __init__(self, host, user, password, port):
