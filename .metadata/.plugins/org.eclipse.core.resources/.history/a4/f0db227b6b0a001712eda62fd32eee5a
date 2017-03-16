@@ -30,12 +30,11 @@ class SchemaDataKeyValue(SchemaData):
     def getPairs(self, key):
         index = self.pairs.index(key)
         return self.pairs[index]
-               
+        
+        
+        
     def putPairs(self, key, value):
         self.pairs.append(key, value)
-        
-    def popPairs(self, key):
-        self.pairs.pop(self.pairs.index(key))
         
         
 
