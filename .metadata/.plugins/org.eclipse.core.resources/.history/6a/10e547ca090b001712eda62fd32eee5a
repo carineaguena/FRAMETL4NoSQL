@@ -1,0 +1,70 @@
+####
+IMPLEMENTAÇÃO
+
+Classes:
+
+MetadaInventory: 
+    Armazena um conjuto de inventários. Adiciona e remove inventários.
+
+Inventory: 
+    Cria um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas.
+    
+ConnectionDB:
+    Estabelece a conexão com o banco de dados.
+    
+SchemaData:
+    Classe abstrata que define o comportamento e os atributos de um esquema.
+    
+SchemaDataColumnFamily:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Família de coluna.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição, conjunto de colunas.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema, 
+    adicionar uma coluna ao conjunto de colunas, remover uma coluna do conjunto de colunas e
+    devolver o valor de uma determinada coluna.
+    
+SchemaDataDocument:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Orientado a documento.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição e um conjunto de documentos.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema,
+    adicionar um documento ao conjunto de documentos, remover um documento do conjunto de documentos e
+    devolver o valor de um determinado documento.
+    
+SchemaDataGraph:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Baseada em Grafos.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição, um conjunto de arestas, 
+    um conjunto de vértices e um conjunto de nós.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema,
+    adicionar um vértice ao conjunto de vértices, uma aresta ao conjunto de arestas, um nó ao conjunto de nós,
+    remover um vértice ao conjunto de vértices, uma aresta ao conjunto de arestas, um nó ao conjunto de nós,
+    e devolver o valor de um determinado vértice, aresta e nó dos conjuntos.
+    
+SchemaDataKeyValue:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Chave-Valor.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição e um conjunto de pares chave-valor.
+    O objeto terá os comportamentos de devovler o nome e a descrição do esquema,
+    adicionar um par ao conjunto de pares chave-valor, remover um par do conjunto de pares chave-valor e
+    devolver os valores de um determinado par chave-valor.
+    
+SyntaxDDL:
+    Classe abstrata que define o comportamento e os atributos da linguagem de definição de dados.
+    
+SyntaxDML:
+    Classe abstrata que define o comportamento e os atributos da linguagem de manipulação de dados.
+    
+    
+
+ - As dmls e ddls determinarão as strings de busca, remoção, inserção, criação, exclusão e alteração de cada
+SGBD NoSQL. Para cada SGBD NoSQL deve ser criado uma classe que deriva da classe SyntaxDDL para linguagem de 
+definição de dados e uma classe que deriva da classe SyntaxDML para linguagem de manipulação de dados.
+
+
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)

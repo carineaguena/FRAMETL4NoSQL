@@ -1,0 +1,45 @@
+####
+IMPLEMENTAÇÃO
+
+Classes:
+
+MetadaInventory: 
+    Armazena um conjuto de inventários. Adiciona e remove inventários.
+
+Inventory: 
+    Cria um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas.
+    
+ConnectionDB:
+    Estabelece a conexão com o banco de dados.
+    
+SchemaData:
+    Classe abstrata que define o comportamento e os atributos de um esquema.
+    
+SchemaDataColumnFamily:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Família de coluna.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição, conjunto de colunas.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema, 
+    adicionar uma coluna ao conjunto de colunas, remover uma coluna do conjunto de colunas e
+    devolver o valor de uma determinada coluna.
+    
+SchemaDataDocument:
+
+    
+    
+
+ - As dmls e ddls determinarão as strings de busca, remoção, inserção, criação, exclusão e alteração de cada
+SGBD NoSQL. Para cada SGBD NoSQL deve ser criado uma classe que deriva da classe SyntaxDDL para linguagem de 
+definição de dados e uma classe que deriva da classe SyntaxDML para linguagem de manipulação de dados.
+
+
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)
+    

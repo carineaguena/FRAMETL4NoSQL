@@ -1,0 +1,34 @@
+####
+IMPLEMENTAÇÃO CHECKLIST
+
+Classes:
+
+MetadaInventory: 
+    Armazena um conjuto de inventários. Adiciona e remove inventários.
+
+Inventory: 
+    Cria um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas.
+    
+ConnectionDB:
+    Estabelece a conexão com o banco de dados.
+    
+SchemaData:
+    Classe abstrata que define o comportamento e os atributos de um esquema.
+    
+SchemaDataColumnFamily:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Família de coluna.
+    
+    
+
+
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)
+    

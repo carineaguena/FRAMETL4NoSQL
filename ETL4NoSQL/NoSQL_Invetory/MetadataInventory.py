@@ -47,10 +47,7 @@ class Inventory:
     
     def addSchema(self, schema):
         self.schemas.append(schema)
-    
-    #Metodo para conexao a base de dados
-    def connectDB(self):
-        pass
+
         
 class ConnectionDB:
     def __init__(self, host, user, password, port):
@@ -58,7 +55,9 @@ class ConnectionDB:
         self.user=user
         self.password=password
         self.port = port
-        
+      
+    def connectDB(self):
+        pass  
     
         
 

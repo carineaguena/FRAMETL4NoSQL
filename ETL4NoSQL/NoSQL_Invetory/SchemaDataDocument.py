@@ -6,6 +6,12 @@ Created on 14 de mar de 2017
 
 from NoSQL_Invetory.SchemaData import SchemaData
 
+#A document is generally a set of fields, where a field is a key-value pair.
+#Keys are atomic strings or bit sequences, and values are either atomic, e.g.,
+#integer or strings, or complex, e.g., lists, maps, and so on. A DS can store
+#several documents or even several collections of documents.
+####NASHOLM, 2012 - Extracting Data from NoSQL Databases
+
 class SchemaDataDocument(SchemaData):
     
     def __init__(self, name, describe):
@@ -16,6 +22,12 @@ class SchemaDataDocument(SchemaData):
     def getSchema(self, name):
         return "Name Schema: " + self.name + " Describe Schema: " + self.describe
         
-    def addDocument(self, document):
-        self.documents.append(document)
+    def putDocuments(self, key, document):
+        self.documents.append(key, document)
         
+    def getDocuments(self, key):
+        index = self.documents.index(key)
+        return self.documents[index]
+    
+    def popDocuments(self, key):
+        self.documents.pop(self.pairs.index(key))

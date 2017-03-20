@@ -1,90 +1,121 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/carineaguena/Documents/LiClipse Workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/ETL4NoSQL/com.python.pydev.analysis/v2_indexcache
-NoSQL_Invetory.SyntaxDML|1489580705000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDML.py
-NoSQL_Invetory.SchemaDataGraph|1489582409000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataGraph.py
-NoSQL.Import|1489541231000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL/Import.py
-NoSQL_Invetory.SchemaDataColumnFamily|1489581609000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataColumnFamily.py
-NoSQL_Invetory.SchemaData|1489582340000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaData.py
+NoSQL_Invetory.SyntaxDMLRedis|1490015732000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDMLRedis.py
+NoSQL_Import.Sample|1490010708000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Import/Sample.py
 NoSQL_Invetory.SyntaxDDL|1489666966000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDDL.py
-Controller|1489581594000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/Controller.py
-NoSQL_Invetory.SchemaDataKeyValue|1489582457000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataKeyValue.py
+NoSQL_Import.__init__|1490008510000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Import/__init__.py
+NoSQL_Invetory.SchemaDataColumnFamily|1490010271000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataColumnFamily.py
+Controller|1490008520000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/Controller.py
+NoSQL_Invetory.SyntaxDDLCassandra|1490011138000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDDLCassandra.py
 NoSQL.__init__|1488800593000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL/__init__.py
+NoSQL_Invetory.SchemaDataDocument|1489694455000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataDocument.py
+NoSQL_Invetory.MetadataInventory|1489695492000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/MetadataInventory.py
+NoSQL_Invetory.SyntaxDML|1489580705000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDML.py
+NoSQL_Invetory.SchemaDataGraph|1489695147000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataGraph.py
+NoSQL_Invetory.SyntaxDDLRedis|1490015487000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDDLRedis.py
+NoSQL_map.__init__|1490008533000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_map/__init__.py
+NoSQL_Invetory.SchemaData|1489582340000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaData.py
+NoSQL_Invetory.SyntaxDMLCassandra|1490015668000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SyntaxDMLCassandra.py
+NoSQL_Invetory.SchemaDataKeyValue|1489752035000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataKeyValue.py
 NoSQL_Invetory.__init__|1489529167000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/__init__.py
-NoSQL_Invetory.SchemaDataDocument|1489582493000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaDataDocument.py
+NoSQL_Import.Import|1489541231000000000|/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Import/Import.py
 -- END DISKCACHE
 -- START DICTIONARY
-22
-10=SchemaDataGraph
-15=SyntaxDDL
-17=SchemaData
-6=NoSQL_Invetory.SchemaDataColumnFamily
-9=NoSQL_Invetory.SyntaxDDL
-2=Controller
-16=SyntaxDML
-18=SchemaDataColumnFamily.__init__
-12=SchemaDataDocument
-5=NoSQL_Invetory.SchemaDataDocument
-19=SchemaDataGraph.__init__
-8=NoSQL_Invetory.SyntaxDML
-14=connectionSource
-11=SchemaDataColumnFamily
-3=NoSQL_Invetory.SchemaDataGraph
-1=NoSQL.Import
-22=connectionSource.__init__
-21=SchemaDataDocument.__init__
-4=NoSQL_Invetory.SchemaData
-7=NoSQL_Invetory.SchemaDataKeyValue
-13=SchemaDataKeyValue
-20=SchemaDataKeyValue.__init__
+40
+22=MetadataInventory
+27=SchemaData
+12=NoSQL_Invetory.SyntaxDMLRedis
+4=NoSQL_Import.Sample
+26=SyntaxDML
+28=SyntaxDDLCassandra
+39=MetadataInventory.__init__
+18=connectionSource
+15=NoSQL_Invetory.SyntaxDDLRedis
+24=ConnectionDB
+38=connectionSource.__init__
+6=NoSQL_Invetory.SchemaData
+29=SyntaxDDLRedis
+9=NoSQL_Invetory.SchemaDataKeyValue
+21=SchemaDataKeyValue
+31=Inventory.__init__
+1=NoSQL_Import.Import
+16=SchemaDataGraph
+25=SyntaxDDL
+20=Sample
+40=Sample.__init__
+8=NoSQL_Invetory.SchemaDataColumnFamily
+14=NoSQL_Invetory.SyntaxDDL
+3=Controller
+30=SchemaDataColumnFamily.__init__
+10=NoSQL_Invetory.SyntaxDDLCassandra
+17=SchemaDataDocument
+7=NoSQL_Invetory.SchemaDataDocument
+34=SchemaDataGraph.__init__
+2=NoSQL_Invetory.MetadataInventory
+11=NoSQL_Invetory.SyntaxDML
+33=SyntaxDMLCassandra
+37=ConnectionDB.__init__
+19=SchemaDataColumnFamily
+5=NoSQL_Invetory.SchemaDataGraph
+36=SchemaDataDocument.__init__
+13=NoSQL_Invetory.SyntaxDMLCassandra
+32=SyntaxDMLRedis
+23=Inventory
+35=SchemaDataKeyValue.__init__
 -- END DICTIONARY
 -- START TREE 1
-6
-con|1|connectionSource!9@
+7
+con|2|connectionSource!9@ConnectionDB!17@
 dat|0|
-inv|1|inventario!19@
-met|0|
-sch|5|SchemaDataGraph!25@SchemaData!33@SchemaDataDocument!41@SchemaDataColumnFamily!49@SchemaDataKeyValue!57@
-syn|2|SyntaxDML!65@SyntaxDDL!73@
+inv|2|inventario!27@Inventory!17@
+met|1|MetadataInventory!17@
+sam|1|Sample!33@
+sch|5|SchemaDataGraph!41@SchemaData!49@SchemaDataDocument!57@SchemaDataColumnFamily!65@SchemaDataKeyValue!73@
+syn|6|SyntaxDDLCassandra!81@SyntaxDML!89@SyntaxDMLRedis!97@SyntaxDMLCassandra!105@SyntaxDDL!113@SyntaxDDLRedis!121@
 -- END TREE
 -- START TREE 2
-38
+42
 __c|0|
-__i|5|__init__!10&26@__init__!11&50@__init__!12&42@__init__!13&58@__init__!14&10@
-__n|3|__new__!15&74@__new__!16&66@__new__!17&34@
-_in|3|_instances!15&75@_instances!16&67@_instances!17&35@
-add|7|addFamily!11&50@addColumn!11&50@addKey!13&58@addDocument!12&42@addVertices!10&26@addValue!13&58@addEdges!10&26@
-alt|1|alterSyntaxDDL!15&74@
+__i|9|__init__!16&42@__init__!17&58@__init__!18&10@__init__!19&66@__init__!20&34@__init__!21&74@__init__!22&18@__init__!23&18@__init__!24&18@
+__n|4|__new__!25&114@__new__!26&90@__new__!22&18@__new__!27&50@
+_in|4|_instances!25&115@_instances!22&19@_instances!26&91@_instances!27&51@
+add|4|addSchema!23&18@addVertices!16&42@addEdges!16&42@addInventory!22&18@
+alt|3|alterSyntaxDDL!28&82@alterSyntaxDDL!29&122@alterSyntaxDDL!25&114@
 cha|0|
-col|1|columns!18&51@
-con|0|
-cre|1|createSyntaxDDL!15&74@
+col|1|columns!30&67@
+con|2|connection!31&19@connectDB!24&18@
+cre|3|createSyntaxDDL!28&82@createSyntaxDDL!25&114@createSyntaxDDL!29&122@
 dbt|0|
-del|1|deleteSyntaxDML!16&66@
-des|4|describe!19&27@describe!20&59@describe!18&51@describe!21&43@
+del|3|deleteSyntaxDML!26&90@deleteSyntaxDML!32&98@deleteSyntaxDML!33&106@
+des|5|describe!34&43@describeInventory!31&19@describe!35&75@describe!30&67@describe!36&59@
 dml|0|
-doc|1|documents!21&43@
-dro|1|dropSyntaxDDL!15&74@
-edg|1|edges!19&27@
-exe|1|executeImport!14&10@
-fam|1|families!18&51@
-get|7|getColumn!11&50@getSchema!13&58@getSchema!17&34@getSchema!12&42@getSchema!10&26@getSchema!11&50@getFamilies!11&50@
-hos|1|host!22&11@
-ins|1|insertSyntaxDML!16&66@
-inv|0|
-key|1|keys!20&59@
-nam|4|name!21&43@name!18&51@name!20&59@name!19&27@
-pas|1|password!22&11@
-por|0|
-que|1|queryImportDB!14&10@
-rem|0|
-sch|1|schemaData!22&11@
+doc|1|documents!36&59@
+dro|3|dropSyntaxDDL!28&82@dropSyntaxDDL!29&122@dropSyntaxDDL!25&114@
+edg|1|edges!34&43@
+exe|1|executeImport!18&10@
+fam|0|
+get|12|getSchema!21&74@getSchema!27&50@getNodes!16&42@getInventoryName!23&18@getInventoryDescribe!23&18@getSchema!17&58@getPairs!21&74@getColumn!19&66@getDocuments!17&58@getSchema!16&42@getSchema!19&66@getSchemas!23&18@
+hos|2|host!37&19@host!38&11@
+ins|3|insertSyntaxDML!32&98@insertSyntaxDML!33&106@insertSyntaxDML!26&90@
+inv|1|inventories!39&19@
+key|0|
+nam|5|nameInventory!31&19@name!36&59@name!35&75@name!30&67@name!34&43@
+nod|1|nodes!34&43@
+pai|1|pairs!35&75@
+pas|2|password!37&19@password!38&11@
+pop|4|popNodes!16&42@popColumn!19&66@popDocuments!17&58@popPairs!21&74@
+por|1|port!37&19@
+put|4|putNodes!16&42@putPairs!21&74@putColumn!19&66@putDocuments!17&58@
+que|1|queryImportDB!18&10@
+rem|1|removeInventory!22&18@
+sch|3|schemas!31&19@schemaData!38&11@schema!40&35@
 sea|0|
-sel|1|selectSyntaxDML!16&66@
+sel|3|selectSyntaxDML!26&90@selectSyntaxDML!33&106@selectSyntaxDML!32&98@
 set|0|
 sgb|0|
-upd|1|updateSyntaxDML!16&66@
-use|1|user!22&11@
-val|1|values!20&59@
-ver|1|vertices!19&27@
+upd|3|updateSyntaxDML!33&106@updateSyntaxDML!26&90@updateSyntaxDML!32&98@
+use|2|user!37&19@user!38&11@
+val|0|
+ver|1|vertices!34&43@
 -- END TREE

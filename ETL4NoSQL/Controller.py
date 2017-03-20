@@ -7,7 +7,7 @@ Component responsible for operations
 
 '''
 from NoSQL_Invetory.SchemaDataColumnFamily import SchemaDataColumnFamily
-'''from NoSQL.Import import connectionSource
+'''from NoSQL_Import.Import import connectionSource
 
 conexao = connectionSource("localhost","root","12346","Cassandra")
 print(conexao.DMLImport)

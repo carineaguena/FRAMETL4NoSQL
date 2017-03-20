@@ -1,0 +1,11 @@
+'''
+Created on 20 de mar de 2017
+
+@author: carineaguena
+'''
+
+class sample:
+    
+    def __init__(self, schema):
+        self.schema = schema
+        

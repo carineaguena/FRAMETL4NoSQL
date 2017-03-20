@@ -1,0 +1,21 @@
+####
+IMPLEMENTAÇÃO CHECKLIST
+
+Classes:
+
+MetadaInventory: Armazena um conjuto de inventários. Adiciona e remove inventários.
+
+Inventory: Cria um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas
+
+
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)
+    

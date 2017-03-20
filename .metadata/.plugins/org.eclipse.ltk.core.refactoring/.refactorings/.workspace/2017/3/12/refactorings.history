@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ETL4NoSQL/NoSQL_Invetory/SyntaxDMLRedis&apos;" deleteContents="false" description="Delete resource &apos;ETL4NoSQL/NoSQL_Invetory/SyntaxDMLRedis&apos;" element1="/ETL4NoSQL/NoSQL_Invetory/SyntaxDMLRedis" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1490015701447"/>
+</session>
