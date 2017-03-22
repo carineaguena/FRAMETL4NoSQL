@@ -8,7 +8,7 @@ from NoSQL_Invetory.SyntaxDML import SyntaxDML
 class SyntaxDMLRedis(SyntaxDML):
     
     def selectSyntaxDML(self):
-        select = ""
+        select = "cat /tmp/commands.txt | redis-cli"
         return select
     
     def updateSyntaxDML(self):

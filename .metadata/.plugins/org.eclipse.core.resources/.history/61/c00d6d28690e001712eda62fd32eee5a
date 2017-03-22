@@ -1,0 +1,29 @@
+'''
+Created on 20 de mar de 2017
+
+@author: carineaguena
+'''
+from NoSQL_Invetory.SchemaDataColumnFamily import SchemaDataColumnFamily
+
+class Sample:
+    
+    def __init__(self, schema):
+        self.schema = schema
+    
+    #metodo para fazer a leitura de values e separar para adicionar os valores no esquema
+    def createSample(self):
+        if self.schema is SchemaDataColumnFamily:
+            print("Sou familia de coluna")
+            while():
+                column = input("Digit column value:")
+                key = input("Digit key value:" )
+                self.schema.putColumn(column, key)
+                finish = input("finish? [y / n]: ")
+                if finish == 'y':
+                    break;
+                
+    def getSample(self):
+        return self.schema
+    
+    def setSample(self):
+        pass   

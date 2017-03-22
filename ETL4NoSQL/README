@@ -51,13 +51,46 @@ SyntaxDDL:
 SyntaxDML:
     Classe abstrata que define o comportamento e os atributos da linguagem de manipulação de dados.
     
+Sample:
+    Classe que tem como comportamento a criação da amostra de acordo com o esquema.
  
 
  - As dmls e ddls determinarão as strings de busca, remoção, inserção, criação, exclusão e alteração de cada
 SGBD NoSQL. Para cada SGBD NoSQL deve ser criado uma classe que deriva da classe SyntaxDDL para linguagem de 
 definição de dados e uma classe que deriva da classe SyntaxDML para linguagem de manipulação de dados.
 
+Importação
 
+Passo 1: Instanciar o esquema de dados a ser importado
+    - Escolhe o paradigma do esquema da base:
+        1. ColumnFamily
+        2. Document
+        3. Graph
+        4. KeyValue
+    
+    - Instancia o esquema baseado no paradigma escolhido:
+        if 1:
+            schema = new SchemaDataColumnFamily
+            2:
+            schema = new SchemaDataDocument
+            3:
+            schema = new SchemaDataGraph
+            4:
+            schema = new SchemaKeyValue
+            
+Passo 2: Escolhe o nome do Inventario e a Descrição para o processo de importação
+        nameInventory, describeInventory
+        
+Passo 3: Adiciona o inventário ao metadados
+    init = new MetadataInventory()
+    init.addInventory(schema, nameInventory, describeInventory)
+    
+Passo 4: Adiciona os atributos do esquema a serem importados
+    sample = new Sample(init.getInventory(schema))
+    sample.createSample(values)
+    
+
+        
 
 Passo 1:
 Criar um esquema para inserir no inventário

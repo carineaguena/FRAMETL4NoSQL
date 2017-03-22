@@ -1,0 +1,8 @@
+'''
+Created on 21 de mar de 2017
+
+@author: carineaguena
+'''
+
+
+paradigma = input("Escolha o paradigma 1 2 3 4: ")

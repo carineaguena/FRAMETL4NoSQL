@@ -2,16 +2,10 @@
 Created on 14 de mar de 2017
 
 @author: carineaguena
-Classe para criar inventários
 '''
 
 class MetadataInventory:
-    _instances = None
-    def __new__(cls, *args, **kwargs):
-        if cls not in cls._instances:
-            cls._instances[cls] = super(MetadataInventory, cls).__new__(*args, **kwargs)
-        return cls._instances[cls]
-    
+        
     def __init__(self):
         self.inventories = []
     
@@ -20,6 +14,10 @@ class MetadataInventory:
         
     def removeInventory(self, inventory):
         self.inventories.remove(inventory.getInventoryName())
+        
+    def getInventories(self):
+        return self.inventories
+    
         
 
 #

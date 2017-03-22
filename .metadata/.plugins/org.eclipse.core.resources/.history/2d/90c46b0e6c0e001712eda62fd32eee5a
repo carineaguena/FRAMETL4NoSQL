@@ -1,0 +1,41 @@
+'''
+Created on 21 de mar de 2017
+
+@author: carineaguena
+'''
+from NoSQL_Invetory.SchemaDataColumnFamily import SchemaDataColumnFamily
+from NoSQL_Invetory.SchemaDataDocument import SchemaDataDocument
+#from NoSQL_Invetory.SchemaDataGraph import SchemaDataGraph
+from NoSQL_Invetory.SchemaDataKeyValue import SchemaDataKeyValue
+from NoSQL_Invetory.MetadataInventory import MetadataInventory
+from NoSQL_Import.Sample import Sample
+
+
+paradigma = input("Escolha o paradigma 1 2 3 4: ")
+name = raw_input("Nome do esquema: ")
+descricao = raw_input("Descricao do esquema: ")
+if paradigma == 1:
+    schema = SchemaDataColumnFamily(name, descricao)
+else:  
+    if paradigma == 2:
+        schema = SchemaDataDocument(name, descricao)
+    else:
+        if paradigma == 4:
+            schema = SchemaDataKeyValue(name, descricao)
+        else:
+            print("Nao existe")
+
+nameInventory = raw_input("Nome do inventario: ")
+describeInventory = raw_input("descricao do inventario")
+print(schema.getSchema())
+init = MetadataInventory()
+init.addInventory(schema, nameInventory, describeInventory)
+
+sample = Sample(schema)
+sample.createSample()
+key = raw_input("digite a key para buscar: ")
+print(sample.getSample().getColumn(key))
+
+
+
+#sample.createSample()

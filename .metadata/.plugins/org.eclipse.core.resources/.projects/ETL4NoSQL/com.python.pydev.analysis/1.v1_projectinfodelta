@@ -1,1 +1,10 @@
-DELSTRNoSQL_Map.__init__
+INSTUPNoSQL_Import.Import
+/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Import/Import.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&2|7|2|1
+selectSample=6
+importDB=7
+Import=1
+Import.__init__=5
+__init__=3
+sample=4
+NoSQL_Import.Import=2

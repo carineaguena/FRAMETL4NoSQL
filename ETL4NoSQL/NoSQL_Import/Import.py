@@ -6,8 +6,32 @@ Componente responsavel pela importacao dos dados da base de origem
 Component responsible for import data from source
 
 '''
+#Classe que importara de fato os dados de acordo com a amostra, utiliza a DML e DDL do esquema de dados
+#Conecta com o banco de dados
+from NoSQL_Invetory.SchemaDataKeyValue import SchemaDataKeyValue
+from NoSQL_Invetory.SyntaxDMLRedis import SyntaxDMLRedis
 
-class connectionSource(object):
+class Import:
+    
+    def __init__(self, sample):
+        self.sample = sample
+    
+    def selectSample(self):
+        if isinstance(self.sample, SchemaDataKeyValue):
+            print("SGBD type REDIS")
+            dml = SyntaxDMLRedis()
+            print(dml.selectSyntaxDML())
+            
+                
+    def importDB(self):
+        pass
+
+
+
+
+
+
+'''class connectionSource(object):
      
     def __init__(self, host, user, password, schemaData):
         self.host=host
@@ -20,7 +44,7 @@ class connectionSource(object):
     
     def executeImport(self):
         execute = self.queryImportDB()
-        return execute
+        return execute'''
     
         
             

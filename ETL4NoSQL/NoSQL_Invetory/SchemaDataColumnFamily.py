@@ -25,7 +25,7 @@ class SchemaDataColumnFamily(SchemaData):
         return "Name Schema: " + self.name + " Describe Schema: " + self.describe
         
     def putColumn(self, column, key):
-        self.columns.append(column, key)
+        self.columns.append(column + key)
         
     def getColumn(self, key):
         index = self.columns.index(key)
