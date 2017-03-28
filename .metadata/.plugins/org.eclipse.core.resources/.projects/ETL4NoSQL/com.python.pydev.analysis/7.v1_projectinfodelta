@@ -1,0 +1,15 @@
+INSTUPNoSQL_Invetory.Inventory
+/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/Inventory.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&3|8|2|5&&2|9|2|1&&2|10|2|1&&2|11|2|1&&2|12|2|1
+getInventoryName=9
+NoSQL_Invetory.Inventory=2
+nameInventory=6
+describeInventory=7
+getSchemas=11
+getInventoryDescribe=10
+schemas=4
+connection=8
+addSchema=12
+__init__=3
+Inventory=1
+Inventory.__init__=5

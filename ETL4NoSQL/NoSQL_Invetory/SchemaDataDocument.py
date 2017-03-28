@@ -14,20 +14,8 @@ from NoSQL_Invetory.SchemaData import SchemaData
 
 class SchemaDataDocument(SchemaData):
     
-    def __init__(self, name, describe):
-        self.documents = []
-        self.name = name
-        self.describe = describe
+    def createSchema(self):
+        key = raw_input("Insert key value: ")
+        document = raw_input("Insert document ")
+        self.putColumn([key, document])
     
-    def getSchema(self, name):
-        return "Name Schema: " + self.name + " Describe Schema: " + self.describe
-        
-    def putDocuments(self, key, document):
-        self.documents.append(key, document)
-        
-    def getDocuments(self, key):
-        index = self.documents.index(key)
-        return self.documents[index]
-    
-    def popDocuments(self, key):
-        self.documents.pop(self.pairs.index(key))

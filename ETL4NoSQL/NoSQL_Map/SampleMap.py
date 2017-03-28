@@ -15,5 +15,6 @@ class SampleMap:
     def setSampleMap(self, newSchema):
         self.schema = newSchema
         
+    def createSampleMap(self):
+        pass
     
-        

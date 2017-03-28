@@ -1,0 +1,20 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+
+from NoSQL_Invetory.SchemaData import SchemaData
+
+#A document is generally a set of fields, where a field is a key-value pair.
+#Keys are atomic strings or bit sequences, and values are either atomic, e.g.,
+#integer or strings, or complex, e.g., lists, maps, and so on. A DS can store
+#several documents or even several collections of documents.
+####NASHOLM, 2012 - Extracting Data from NoSQL Databases
+
+class SchemaDataDocument(SchemaData):
+    
+    def createSchema(self):
+        key = raw_input("Insert key value: ")
+        document = raw_input("Insert document ")
+        self.putColumn([key, document])

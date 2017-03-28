@@ -3,7 +3,7 @@ IMPLEMENTAÇÃO
 
 Classes:
 
-MetadaInventory: 
+InventoryFactory: 
     Armazena um conjuto de inventários. Adiciona e remove inventários.
 
 Inventory: 
@@ -101,3 +101,29 @@ Criar um esquema para inserir no inventário
 
 Instanciar um Inventário de Metadados
     inventario  = MetadataInventory(esquema, nome, descricao)
+    
+    
+    '''
+if paradigma == 1:
+    schema = SchemaDataColumnFamily(name, descricao)
+else:  
+    if paradigma == 2:
+        schema = SchemaDataDocument(name, descricao)
+    else:
+        if paradigma == 4:
+            schema = SchemaDataKeyValue(name, descricao)
+        else:
+            print("Nao existe")
+
+nameInventory = raw_input("Nome do inventario: ")
+describeInventory = raw_input("descricao do inventario: ")
+print(schema.getSchema())
+init = InventoryFactory()
+init.addInventory(schema, nameInventory, describeInventory)
+
+sample = Sample(schema)
+sample.createSample()
+key = raw_input("digite a key para buscar: ")
+print(sample.getSample().getColumn(key))
+
+'''

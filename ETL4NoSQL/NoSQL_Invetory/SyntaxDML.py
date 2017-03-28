@@ -3,23 +3,23 @@ Created on 15 de mar de 2017
 
 @author: carineaguena
 '''
+from abc import abstractmethod
 
 class SyntaxDML:
-    _instances = None
-    def __new__(cls, *args, **kwargs):
-        if cls not in cls._instances:
-            cls._instances[cls] = super(SyntaxDML, cls).__new__(*args, **kwargs)
-        return cls._instances[cls]
     
+    @abstractmethod
     def selectSyntaxDML(self):
         pass
     
+    @abstractmethod
     def updateSyntaxDML(self):
         pass
     
+    @abstractmethod
     def insertSyntaxDML(self):
         pass
     
+    @abstractmethod
     def deleteSyntaxDML(self):
         pass
     

@@ -5,55 +5,47 @@ Created on 20 de mar de 2017
 '''
 #Responsible for create the sample basead on schema
 
-from NoSQL_Invetory.SchemaDataColumnFamily import SchemaDataColumnFamily
-from NoSQL_Invetory.SchemaDataDocument import SchemaDataDocument
-from NoSQL_Invetory.SchemaDataGraph import SchemaDataGraph
-from NoSQL_Invetory.SchemaDataKeyValue import SchemaDataKeyValue
-
-
 class Sample:
-    
-    def __init__(self, schema):
-        self.schema = schema
     
     #metodo para fazer a leitura de values e separar para adicionar os valores no esquema
     def createSample(self):
-        response = ''
+        paradigma = input("Escolha o paradigma 1 2 3 4: ")
         #identifica o tipo de esquema e grava o que deve ser importado
-        if isinstance(self.schema, SchemaDataColumnFamily):
-            while response != 'y':
-                #pode ser utilizado outros tipos de entrada
-                column = raw_input("Digit column value:")
-                key = raw_input("Digit key value:" )
-                self.schema.putColumn(column, key)
-                finish = raw_input("finish? [y / n]: ")
-                if finish == 'y':
-                    break;
+        if paradigma == 1:
+                name = raw_input("Nome do esquema: ")
+                descricao = raw_input("Descricao do esquema: ")
+
+                if __name__ == '__main__':
+                    schema_type = "SchemaDataColumnFamily"
+                    schema = eval(schema_type)(name, descricao)
+                    print("Criando esquema..", type(schema).__name__)
         else:
-            if isinstance(self.schema, SchemaDataDocument):
-                while response != 'y':
-                    document = raw_input("Digit document:")
-                    self.schema.putDocuments(document)
-                    finish = raw_input("finish? [y / n]: ")
-                if finish == 'y':
-                    break;
+            if paradigma==2:
+                name = raw_input("Nome do esquema: ")
+                descricao = raw_input("Descricao do esquema: ")
+
+                if __name__ == '__main__':
+                    schema_type = "SchemaDataDocument"
+                    schema = eval(schema_type)(name, descricao)
+                    print("Criando esquema..", type(schema).__name__)
             else:
-                if isinstance(self.schema, SchemaDataGraph):
-                    while response != 'y':
-                        node = raw_input("Digit node:")
-                        self.schema.putNodes(node)
-                        finish = raw_input("finish? [y / n]: ")
-                        if finish == 'y':
-                            break;
+                if paradigma == 3:
+                    name = raw_input("Nome do esquema: ")
+                    descricao = raw_input("Descricao do esquema: ")
+
+                if __name__ == '__main__':
+                    schema_type = "SchemaDataGraph"
+                    schema = eval(schema_type)(name, descricao)
+                    print("Criando esquema..", type(schema).__name__)
                 else:
-                    if isinstance(self.schema, SchemaDataKeyValue):
-                        while response != 'y':
-                            key = raw_input("Digit Key: ")
-                            value = raw_input("Digit Value: ")
-                            self.schema.putPairs(key+value)
-                            finish = raw_input("finish? [y / n]: ")
-                            if finish == 'y':
-                                break;
+                    if paradigma == 4:
+                        name = raw_input("Nome do esquema: ")
+                        descricao = raw_input("Descricao do esquema: ")
+
+                    if __name__ == '__main__':
+                        schema_type = "SchemaDataKeyValue"
+                        schema = eval(schema_type)(name, descricao)
+                        print("Criando esquema..", type(schema).__name__)
                     
                 
     def getSample(self):

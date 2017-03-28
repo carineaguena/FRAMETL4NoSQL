@@ -12,25 +12,10 @@ from NoSQL_Invetory.SchemaData import SchemaData
 
 class SchemaDataKeyValue(SchemaData):
     
-    def __init__(self, name, describe):
-
-        self.name = name
-        self.describe = describe
-        self.pairs = []
-    
-    def getSchema(self, name):
-        return "Name Schema: " + self.name + " Describe Schema: " + self.describe
-        
-    
-    def getPairs(self, key):
-        index = self.pairs.index(key)
-        return self.pairs[index]
-               
-    def putPairs(self, key, value):
-        self.pairs.append(key, value)
-        
-    def popPairs(self, key):
-        self.pairs.pop(self.pairs.index(key))
+    def createSchema(self):
+        key = raw_input("Insert key value: ")
+        self.putColumn(key)
+  
         
         
 

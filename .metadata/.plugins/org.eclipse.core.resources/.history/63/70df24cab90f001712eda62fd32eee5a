@@ -1,0 +1,103 @@
+####
+IMPLEMENTAÇÃO
+
+Classes:
+
+InventoryFactory: 
+    Armazena um conjuto de inventários. Adiciona e remove inventários.
+
+Inventory: 
+    Cria um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas.
+    
+ConnectionDB:
+    Estabelece a conexão com o banco de dados.
+    
+SchemaData:
+    Classe abstrata que define o comportamento e os atributos de um esquema.
+    
+SchemaDataColumnFamily:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Família de coluna.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição, conjunto de colunas.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema, 
+    adicionar uma coluna ao conjunto de colunas, remover uma coluna do conjunto de colunas e
+    devolver o valor de uma determinada coluna.
+    
+SchemaDataDocument:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Orientado a documento.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição e um conjunto de documentos.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema,
+    adicionar um documento ao conjunto de documentos, remover um documento do conjunto de documentos e
+    devolver o valor de um determinado documento.
+    
+SchemaDataGraph:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Baseada em Grafos.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição, um conjunto de arestas, 
+    um conjunto de vértices e um conjunto de nós.
+    O objeto terá os comportamentos de devolver o nome e a descrição do esquema,
+    adicionar um vértice ao conjunto de vértices, uma aresta ao conjunto de arestas, um nó ao conjunto de nós,
+    remover um vértice ao conjunto de vértices, uma aresta ao conjunto de arestas, um nó ao conjunto de nós,
+    e devolver o valor de um determinado vértice, aresta e nó dos conjuntos.
+    
+SchemaDataKeyValue:
+    Classe derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Chave-Valor.
+    Ao se criar um objeto da classe ele terá como atributos nome, descrição e um conjunto de pares chave-valor.
+    O objeto terá os comportamentos de devovler o nome e a descrição do esquema,
+    adicionar um par ao conjunto de pares chave-valor, remover um par do conjunto de pares chave-valor e
+    devolver os valores de um determinado par chave-valor.
+    
+SyntaxDDL:
+    Classe abstrata que define o comportamento e os atributos da linguagem de definição de dados.
+    
+SyntaxDML:
+    Classe abstrata que define o comportamento e os atributos da linguagem de manipulação de dados.
+    
+Sample:
+    Classe que tem como comportamento a criação da amostra de acordo com o esquema.
+ 
+
+ - As dmls e ddls determinarão as strings de busca, remoção, inserção, criação, exclusão e alteração de cada
+SGBD NoSQL. Para cada SGBD NoSQL deve ser criado uma classe que deriva da classe SyntaxDDL para linguagem de 
+definição de dados e uma classe que deriva da classe SyntaxDML para linguagem de manipulação de dados.
+
+Importação
+
+Passo 1: Instanciar o esquema de dados a ser importado
+    - Escolhe o paradigma do esquema da base:
+        1. ColumnFamily
+        2. Document
+        3. Graph
+        4. KeyValue
+    
+    - Instancia o esquema baseado no paradigma escolhido:
+        if 1:
+            schema = new SchemaDataColumnFamily
+            2:
+            schema = new SchemaDataDocument
+            3:
+            schema = new SchemaDataGraph
+            4:
+            schema = new SchemaKeyValue
+            
+Passo 2: Escolhe o nome do Inventario e a Descrição para o processo de importação
+        nameInventory, describeInventory
+        
+Passo 3: Adiciona o inventário ao metadados
+    init = new MetadataInventory()
+    init.addInventory(schema, nameInventory, describeInventory)
+    
+Passo 4: Adiciona os atributos do esquema a serem importados
+    sample = new Sample(init.getInventory(schema))
+    sample.createSample(values)
+    
+
+        
+
+Passo 1:
+Criar um esquema para inserir no inventário
+    esquema = SchemaData()
+    
+    //adicionar um esquema no vetor
+    esquema.addSchema("Chave Valor")
+
+Instanciar um Inventário de Metadados
+    inventario  = MetadataInventory(esquema, nome, descricao)

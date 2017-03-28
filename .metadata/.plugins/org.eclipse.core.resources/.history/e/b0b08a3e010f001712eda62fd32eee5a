@@ -1,0 +1,27 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+from abc import abstractmethod
+
+class SchemaData:
+    _instances = None
+    def __new__(cls, *args, **kwargs):
+        if cls not in cls._instances:
+            cls._instances[cls] = super(SchemaData, cls).__new__(*args, **kwargs)
+        return cls._instances[cls]
+
+    def __init__(self):
+        self.structure = []
+        
+    
+    @abstractmethod
+    def getSchema(self):
+        pass
+    
+    @abstractmethod
+    def addStructure(self):
+        pass
+        
+            

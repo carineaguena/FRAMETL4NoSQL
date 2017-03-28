@@ -15,23 +15,12 @@ from NoSQL_Invetory.SchemaData import SchemaData
 ####NASHOLM, 2012 - Extracting Data from NoSQL Databases
 
 class SchemaDataColumnFamily(SchemaData):
+
+    def createSchema(self):
+        key = raw_input("Insert key value: ")
+        timestamp = raw_input("Insert timestamp ")
+        self.putColumn([key, timestamp])
+      
     
-    def __init__(self, name, describe):
-        self.columns = []
-        self.name = name
-        self.describe = describe
-        
-    def getSchema(self):
-        return "Name Schema: " + self.name + " Describe Schema: " + self.describe
-        
-    def putColumn(self, column, key):
-        self.columns.append(column + key)
-        
-    def getColumn(self, key):
-        index = self.columns.index(key)
-        return self.columns[index]
-        
-    def popColumn(self, key):
-        self.columns.pop(self.columns.index(key))
         
     

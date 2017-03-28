@@ -3,20 +3,20 @@ Created on 16 de mar de 2017
 
 @author: carineaguena
 '''
+from abc import abstractmethod
 
 class SyntaxDDL:
-    _instances = None
-    def __new__(cls, *args, **kwargs):
-        if cls not in cls._instances:
-            cls._instances[cls] = super(SyntaxDDL, cls).__new__(*args, **kwargs)
-        return cls._instances[cls]
+
     
+    @abstractmethod
     def createSyntaxDDL(self):
         pass
     
+    @abstractmethod
     def alterSyntaxDDL(self):
         pass
     
+    @abstractmethod
     def dropSyntaxDDL(self):
         pass
     

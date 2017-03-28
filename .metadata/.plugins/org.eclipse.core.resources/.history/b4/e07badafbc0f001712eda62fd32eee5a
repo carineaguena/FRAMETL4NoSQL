@@ -1,0 +1,29 @@
+'''
+Created on 21 de mar de 2017
+
+@author: carineaguena
+'''
+from NoSQL_Invetory.SchemaDataColumnFamily import SchemaDataColumnFamily
+from NoSQL_Invetory.SchemaDataDocument import SchemaDataDocument
+#from NoSQL_Invetory.SchemaDataGraph import SchemaDataGraph
+from NoSQL_Invetory.SchemaDataKeyValue import SchemaDataKeyValue
+from NoSQL_Invetory.InventoryFactory import InventoryFactory
+
+
+
+paradigma = input("Escolha o paradigma 1 2 3 4: ")
+name = raw_input("Nome do esquema: ")
+descricao = raw_input("Descricao do esquema: ")
+
+if __name__ == '__main__':
+    schema_type = "SchemaDataColumnFamily"
+    schema = eval(schema_type)(name, descricao)
+    print("Criando esquema..", type(schema).__name__)
+
+if __name__ == '__main__':    
+    schema_type = "SchemaDataKeyValue"
+    schema = eval(schema_type)(name, descricao)
+    print("Criando esquema..", type(schema).__name__)
+
+
+#sample.createSample()

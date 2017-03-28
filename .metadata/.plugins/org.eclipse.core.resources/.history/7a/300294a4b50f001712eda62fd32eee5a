@@ -1,0 +1,22 @@
+'''
+Created on 14 de mar de 2017
+
+@author: carineaguena
+'''
+from abc import abstractmethod
+
+class SchemaData:
+    def __init__(self):
+        self.columns = []
+        self.createSchema()
+        
+    @abstractmethod
+    def getSchema(self):
+        pass
+    
+    @abstractmethod
+    def createSchema(self):
+        pass
+    
+        
+            

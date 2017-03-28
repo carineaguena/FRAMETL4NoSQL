@@ -16,28 +16,9 @@ from NoSQL_Invetory.SchemaData import SchemaData
 
 class SchemaDataGraph(SchemaData):
     
-    def __init__(self, name, describe):
-        self.edges = []
-        self.vertices = []
-        self.name = name
-        self.describe = describe
-        self.nodes = []
+    def createSchema(self):
+        node = raw_input("Insert node value: ")
+        edge = raw_input("Insert edge value: ")
+        vertice = raw_input("Insert vertice value:")
+        self.putColumn([node, edge, vertice])
     
-    def getSchema(self, name):
-        return "Name Schema: " + self.name + " Describe Schema: " + self.describe
-        
-    def addEdges(self, edge):
-        self.edges.append(edge)
-        
-    def addVertices(self, vertice):
-        self.vertices.append(vertice)
-        
-    def putNodes(self, vertice, edge):
-        self.nodes.append(vertice, edge)
-        
-    def getNodes(self, node):
-        index = self.nodes.index(node)
-        return self.nodes[index]
-    
-    def popNodes(self, node):
-        self.nodes.pop(self.nodes.index(node))
