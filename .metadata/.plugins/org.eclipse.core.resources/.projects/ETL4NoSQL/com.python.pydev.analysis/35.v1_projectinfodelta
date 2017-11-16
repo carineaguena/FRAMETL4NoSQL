@@ -1,8 +1,0 @@
-INSTUPNoSQL_Invetory.SchemaData
-/Users/carineaguena/Documents/LiClipse Workspace/ETL4NoSQL/NoSQL_Invetory/SchemaData.py
-INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1
-SchemaData=1
-NoSQL_Invetory.SchemaData=2
-createSchema=5
-__init__=3
-getSchema=4
